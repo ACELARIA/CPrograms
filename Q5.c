@@ -7,6 +7,6 @@ int main()
 	a=a+b;
 	b=a-b;
 	c=a-b;
-	printf("after swapping value of a & b:%d%d",a,b,c);
+	printf("after swapping =%d%d\n",a,b,c);
 	return 0;
 }
