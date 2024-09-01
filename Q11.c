@@ -6,6 +6,6 @@ int main(){
 	h = ts*3600;
 	m = ts*60;
 	s = ts;
-	printf("%d\n%d\n%d\n",h,m,s);
+	printf("h:%d\n m:%d\n s:%d\n",h,m,s);
 	return 0;
 }
