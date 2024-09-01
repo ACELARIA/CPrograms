@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main(){
     int number;
+    printf("PROGRAM TO CHECK WHETHER A NO. IS EVEN OR ODD\n");
     printf("Enter a number: ");
     scanf("%d", &number);
     if (number % 2 == 0) {
