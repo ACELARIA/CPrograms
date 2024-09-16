@@ -3,20 +3,22 @@
 int factorial(int n) {
     int fact = 1;
     for (int i = 1; i <= n; i++) {
-        fact *= i;
+        fact =fact* i;
     }
+
     return fact;
 }
 
 int main() {
-    int n, term;
+    int n;
     double sum = 0.0;
+    float term;
 
     printf("Enter the number of terms: ");
     scanf("%d", &n);
 
     for (int i = 1; i <= n; i++) {
-        term = i / factorial(i);
+        term =(float) i / factorial(i);
         sum += term;
     }
 
