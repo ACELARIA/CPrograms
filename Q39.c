@@ -1,25 +1,22 @@
 #include <stdio.h>
 
-int factorial(int n) {
-    if (n == 0) {
-        return 1;
-    } else {
-        return n * factorial(n - 1);
-    }
-}
-
 int main() {
-    int n, i;
-    double sum = 0;
+    int n, i, j;
+    float term, sum;
 
-    printf("Enter the value of n: ");
+    printf("Enter the value of N: ");
     scanf("%d", &n);
 
+    sum = 0;
     for (i = 1; i <= n; i++) {
-        sum += (double)i;
-       factorial(i);
+        term = 1;
+        for (j = 1; j <= i; j++) {
+            term *= j;
+        }
+        sum += (float)i / term;
     }
 
     printf("The sum of the series is: %.2f\n", sum);
+
     return 0;
 }

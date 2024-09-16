@@ -2,10 +2,15 @@
 int main ()
 {
 	int p,r,t,si;
-	printf("enter principle, rate of interest and time to find simple interest:");
-	scanf("%d%d%d",&p,&r,&t);
+	printf("PROGRAM TO CALCULATE SIMPLE INTEREST");
+	printf("\nenter principal: "); 
+	scanf("%d",&p);
+	printf("rate of interest(percentage): ");
+	scanf("%d",&r);
+	printf("time(in years): ");
+	scanf("%d",&t);
 	si=(p*r*t)/100;
-	printf("simple interst=%d\n",si);
+	printf("\nsimple interst=%d\n",si);
 	return 0;
 }
 
