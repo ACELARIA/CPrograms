@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
     char character;
-    printf("PROGRAM TO CHECK WHETHER A GIVEN CHARACTER IS CAPITAL, LETTER, SMALL CASE LETTER, A DIGIT OR A SPECIAL SYMBOL\n");
+    printf("PROGRAM TO CHECK WHETHER A GIVEN CHARACTER IS CAPITAL LETTER, SMALL CASE LETTER, A DIGIT OR A SPECIAL SYMBOL\n");
 	printf("Enter a character: ");
     scanf("%c", &character);
 
