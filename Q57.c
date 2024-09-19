@@ -8,7 +8,7 @@ int main() {
 
     if (n < 2) {
         printf("Please enter at least 2 numbers.\n");
-        return 1;
+        return 0;
     }
 
     int numbers[n];
