@@ -10,7 +10,7 @@ double y(double x, int n) {
     } else if (n > 3 || n < 1) {
         return 1 + n * x;
     } else {
-        return 0; // Error case
+        return 0; 
     }
 }
 
