@@ -1,14 +1,21 @@
 #include <stdio.h>
-
+//#include <stdlib.h>
+  
+void reverseArray(int arr[], int n) {
+    int temp[n];
+    for(int i=0; i<n; i++)
+        temp[i] = arr[n-i-1];
+  
+    for(int i=0; i<n; i++)
+        arr[i] = temp[i];
+}
 int main() {
-    int a1[10], reversed=0,remainder;
-    int i;
+    int arr[] = { 11, 33, 9, 17, 20, 43 };
+    int n = sizeof(arr) / sizeof(arr[0]);
 
-    printf("enter 10 integers for array :\n");
-    for (i=0; i<10; i++) {
-        scanf("%d", &a1[i]);
-        
-    }
-    printf("The reversed number is: %d\n", reversed);
+    reverseArray(arr, n);
+    for(int i=0; i<n; i++) 
+    printf("%d ", arr[i]);
+    
     return 0;
 }
