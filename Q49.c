@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int rows=5, i, j, space;
+    int rows=5, i, j, k;
 
-    for (i = 1; i <= rows; ++i) {
-        for (space = 1; space <= rows - i; ++space) {
+    for (i=1; i<=rows; i++) {
+        for (j=1; j<=rows-i; j++) {
             printf("  ");
         }
-        for (j = 1; j <= 2 * i - 1; ++j) {
+        for (k=1; k<= 2*i-1; k++) {
             printf("* ");
         }
         printf("\n");
