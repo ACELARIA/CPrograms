@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int base, exponent, result = 1;
+    int base, exponent, i,result = 1;
 
     printf("Enter the base number: ");
     scanf("%d", &base);
@@ -9,7 +9,7 @@ int main() {
     printf("Enter the exponent: ");
     scanf("%d", &exponent);
 
-    for (int i = 0; i < exponent; i++) {
+    for (i = 0; i < exponent; i++) {
         result *= base;
     }
 
