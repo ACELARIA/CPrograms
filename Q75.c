@@ -35,15 +35,17 @@ int main() {
     }
 
     printf("\nTotal marks for each student:\n");
-    for (int i = 0; i < num_students; i++) {
+    for (int i = 0; i < num_students; i++) 
+    {
         printf("Student %d: %d\n", i + 1, total_marks[i]);
     }
 
     printf("\nHighest marks in each subject:\n");
-    for (int i = 0; i < num_subjects; i++) {
+    for (int i = 0; i < num_subjects; i++) 
+    {
         printf("Subject %d: %d (Student %d)\n", i + 1, highest_marks[i], highest_marks_student[i]);
     }
 
-    printf("\nStudent with the highest total marks: %d\n", highest_total_student);
+    printf("\nStudent with the highest total marks: student %d\n", highest_total_student);
 
 }
